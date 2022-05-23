@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Bill</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+	.main
+	{
+		margin: auto;
+		width: 50%; 
+	}
+	table, tr
+	{
+		border-style: solid;
+		border-color: black;
+		border-collapse: collapse;
+		width: 800px;
+		height: 40px;
+		text-align: center;
+	}
+	.bill
+	{
+		border-style: solid;
+		border-color: black;
+		border-collapse: collapse;
+		width: 800px;
+		height: 40px;
+		text-align: center;
+	}
+	.tongcong
+	{
+		width: 1000px;
+	}
+	.header
+	{
+		/*background-color: #9ae2f8;*/
+	}
+	.body
+	{
+		display: grid;
+		grid-template-columns: 10% auto auto auto;
+	}
+	.align-flex
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	a:link, a:visited 
+	{
+	  background-color: black;
+	  color: white;
+	  padding: 14px 25px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  border-radius: 20px;
+	}
+
+	a:hover, a:active 
+	{
+  		background-color: #008000;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="main">
+	<h1 class="align-flex">Đơn Hàng Của Bạn</h1>
+	<table id="table" class="header">
+		<tr>
+			<td class="bill">Sản Phẩm</td>
+			<td class="bill">Giá</td>
+			<td class="bill">Số Lượng</td>
+			<td class="bill">Giai Đoạn</td>
+		</tr>
+	</table><br><br>
+	<a href="cart.html">Back</a>
+	<script type="text/javascript" src="bill.js"></script>
+</body>
+</html>

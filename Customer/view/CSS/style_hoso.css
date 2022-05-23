@@ -1,0 +1,232 @@
+body .box,
+body .box2 {
+    text-align: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: fit-content;
+}
+
+*:focus {
+    outline: none;
+}
+
+.box {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    transition: all 1.5s;
+}
+
+.box2 {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    width: 350px;
+    height: 380px;
+    border: 2px solid gray;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.box:hover {
+    width: 350px;
+    height: 550px;
+    border-radius: 5px;
+}
+
+.ava-img {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0;
+    border: 5px solid black;
+    padding: 2px;
+    background-color: white;
+    overflow: hidden;
+    transition: all 1.5s;
+}
+
+.box:hover .ava-img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 35%;
+}
+
+hr {
+    width: 100%;
+    line-height: 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+.box input,
+.box2 input {
+    text-align: left;
+}
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="number"],
+.box2 input[type="password"] {
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    box-sizing: border-box;
+    color: gray;
+    padding: 5px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+    background: none;
+}
+
+.box input[type="text"],
+.box2 input[type="password"] {
+    margin-top: 25px;
+}
+
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+.box input[type="number"]:focus,
+.box2 input[type="password"]:focus {
+    border: 2px solid gray;
+    border-radius: 10px;
+    color: gray;
+    transition: 0.2s ease;
+    background: white;
+}
+
+.savE,
+.done {
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    left: 0;
+    margin: 0px;
+    transition: all 0.5s;
+}
+
+.savE:hover,
+.done:hover {
+    transform: scale(1.2);
+    background-color: gray;
+}
+
+
+/*.box input[type="file"] {
+    display: none !important;
+}*/
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.change-ava {
+    box-sizing: border-box;
+    width: 40px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.change-ava:hover {
+    background-color: gray;
+    transform: scale(1.2);
+}
+
+.changepassword {
+    float: left;
+    margin: 50px 0 0 5%;
+    background-color: black;
+    color: white;
+}
+
+.savE {
+    margin: auto;
+    margin: 50px 0 0 0;
+    background-color: black;
+    color: white;
+}
+
+.done {
+    margin: auto;
+    margin: 50px 0 0 0;
+    background-color: black;
+    color: white;
+}
+
+input.passOld {
+    border-top: 1px solid;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+}
+
+input.passOne {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-radius: 0px 0px 15px 15px;
+    -webkit-border-radius: 0px 0px 15px 15px;
+    -moz-border-radius: 0px 0px 15px 15px;
+}
+
+input.passTwo {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-radius: 0px 0px 15px 15px;
+    -webkit-border-radius: 0px 0px 15px 15px;
+    -moz-border-radius: 0px 0px 15px 15px;
+}
+
+.logout {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.logout:hover,
+.logout:active {
+    text-decoration: none;
+    background-color: red;
+    font-size: 20px;
+}
