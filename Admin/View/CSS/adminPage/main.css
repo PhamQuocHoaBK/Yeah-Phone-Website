@@ -1,0 +1,83 @@
+.main-content{
+    margin: auto;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px;
+    grid-column-gap: 15px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.show-img {
+    width: 230px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 15px;
+    border-right: 2px solid rgb(214, 214, 214);
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    border: 3px solid rgb(100, 100, 100);
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.admin-info {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+b {
+    color: rgb(109, 109, 109);
+}
+
+#btn {
+    background-color: black;
+    outline: none;
+    border: 2px solid black;
+    width: 100px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#img {
+    display: none;
+}
+
+#label-img {
+    background-color: black;
+    border: 2px solid black;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#label-img:hover {
+    background-color: white;
+    color: black;
+}

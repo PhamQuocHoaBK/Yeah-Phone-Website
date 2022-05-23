@@ -1,0 +1,198 @@
+
+/* Table css */
+table {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    font-size: 18px;
+    max-width: 90%;
+    background-color: white;
+    border-radius: 8px 8px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+thead tr {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-member thead tr {
+    background-color: rgb(13, 145, 72);
+}
+
+.table-product thead tr {
+    background-color: rgb(177, 180, 0);
+}
+
+.table-comment thead tr {
+    background-color: rgb(0, 73, 182);
+}
+
+.table-cart thead tr {
+    background-color: rgb(148, 0, 161);
+}
+
+td, th {
+    padding: 12px 25px;
+}
+
+tbody tr {
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: rgb(243, 243, 243);
+}
+
+.table-member tbody tr:last-of-type {
+    border-bottom: 3px solid rgb(13, 145, 72);
+}
+
+.table-comment tbody tr:last-of-type {
+    border-bottom: 3px solid rgb(0, 73, 182);
+}
+
+.table-product tbody tr:last-of-type {
+    border-bottom: 3px solid rgb(177, 180, 0);
+}
+
+.table-cart tbody tr:last-of-type {
+    border-bottom: 3px solid rgb(148, 0, 161);
+}
+
+/* End table */
+
+
+
+
+/* Button css */
+.btn-delete {
+    background-color: rgb(223, 0, 0);
+    color: white;
+    outline: none;
+    border: 1px solid rgb(223, 0, 0);
+    border-radius: 10px;
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.btn-delete:hover {
+    background-color: white;
+    color: rgb(223, 0, 0);
+}
+
+.btn-brows {
+    background-color: rgb(14, 168, 0);
+    color: white;
+    outline: none;
+    border: 1px solid rgb(14, 168, 0);
+    border-radius: 10px;
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.btn-brows:hover {
+    background-color: white;
+    color: rgb(14, 168, 0);
+}
+
+.btn-edit {
+    background-color: rgb(0, 20, 204);
+    color: white;
+    outline: none;
+    border: 1px solid rgb(0, 20, 204);
+    border-radius: 10px;
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.btn-edit:hover {
+    background-color: white;
+    color: rgb(0, 20, 204);
+}
+
+.btn-update {
+    background-color: rgb(18, 151, 0);
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid rgb(18, 151, 0);
+    border-radius: 35px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.btn-update:hover {
+    background-color: white;
+    color: rgb(18, 151, 0);
+}
+
+/* End button */
+
+
+
+/* Else css */
+
+.product-content {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.product-content h3 {
+    color: rgb(124, 124, 124);
+    font-size: 25px;
+}
+
+.product-content div {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(223, 223, 223);
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: white;
+    margin-top: 25px;
+    height: 30px;
+}
+
+.product-content div:hover {
+    border-color: rgb(0, 156, 0);
+}
+
+.product-content label {
+    color: grey;
+    padding-right: 7px;
+    border-right: 1px solid rgb(199, 199, 199);
+}
+
+.product-content input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+
+.product-content button {
+    margin-top: 40px;
+}
+/* End else */

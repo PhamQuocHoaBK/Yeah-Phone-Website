@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/index/index.css">
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="main">
+            <div class="image">
+            <img src="CSS/index/login_pic.jpg" alt="">
+        </div>
+        <form method="post">
+            <label>Đăng nhập</label>
+            <input type="text" name="user" id="user" placeholder="Tài khoản">
+            <input type="password" name="pass" id="pass" placeholder="Mật khẩu">
+            <input type="submit" id="btn" value="Đăng nhập">
+        </form>
+        </div>
+        
+    </div>
+
+    <script>
+        $(document).ready(function(e){
+            $("#btn").click(function(e){
+                e.preventDefault();
+                if($("#user").val() != "" && $("#pass").val() != "") {
+                    $.ajax({
+                        url: "../Controller/RequestController.php",
+                        method: "POST",
+                        data: {
+                            login_admin : "true",
+                            user: $("#user").val(),
+                            pass: $("#pass").val()
+                        },
+                        success: function(mess){
+                            if(mess == "Not found account") alert("Tài khoản không đúng !");
+                            else window.location.replace("main.php");
+                        }
+                    })
+                }
+                else alert("Nhập thông tin đầy đủ !");
+            })
+        })
+    </script>
+</body>
+
+</html>
