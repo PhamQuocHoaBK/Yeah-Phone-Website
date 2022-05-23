@@ -1,2 +1,2 @@
 # Yeah-Phone-Website
-YeahPhone-Website: là trang web chuyên bán điện thoại
+YeahPhone-Website: là dự án hiện thực trang web bán điện thoại di động.
